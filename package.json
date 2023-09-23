@@ -1,0 +1,23 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "openCreator.js",
+  "scripts": {
+    "script": "node index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "Rodrigo Weber Sesterheim",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "eslint": "^8.50.0",
+    "eslint-config-google": "^0.14.0",
+    "open": "^9.1.0"
+  },
+  "dependencies": {
+    "consola": "^3.2.3"
+  }
+}
