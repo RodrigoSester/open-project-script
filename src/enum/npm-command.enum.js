@@ -1,5 +1,5 @@
 const npmCommandEnum = {
-  dev: 'npm run devear',
+  dev: 'npm run dev',
   local: 'npm run local',
 };
 

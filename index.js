@@ -4,7 +4,6 @@ require('dotenv').config();
 const fs = require('fs');
 const readline = require('readline');
 const path = require('path');
-const consola = require('consola');
 
 // class
 const Project = require('./src/class/Project');
@@ -37,7 +36,7 @@ rl.question('Dev or local? ', (userInput) => {
       openProject(environmentEnum.LOCAL);
       break;
     default:
-      consola.warn('Invalid input: ', userInput);
+      console.warn('Invalid input: ', userInput);
       break;
   }
 

@@ -1,4 +1,3 @@
-const consola = require('consola');
 const {exec} = require('child_process');
 
 /**
@@ -22,12 +21,7 @@ class Project {
 
   /** */
   run() {
-    exec(`cd ${this.path} && start bash -c "${this.npmCommand}"`,
-        async (error) => {
-          if (error) {
-            consola.fatal(`Error running project: ${error}`);
-          }
-        });
+    exec(`cd ${this.path} && start bash -c "${this.npmCommand}"`);
   }
 }
 
